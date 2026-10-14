@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useI18n } from '@/i18n';
 import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
@@ -6,12 +6,38 @@ import ThemeToggle from '@/components/ui/ThemeToggle';
 
 const Header: React.FC = () => {
   const { t } = useI18n();
-  const initials = t.hero.name
-    .split(' ')
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0]?.toUpperCase())
-    .join('');
+
+  const fullText = 'CW';
+  const [typedText, setTypedText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const i = loopNum % fullText.length;
+      const fullWord = fullText;
+
+      if (isDeleting) {
+        setTypedText(fullWord.substring(0, typedText.length - 1));
+        setTypingSpeed(100);
+      } else {
+        setTypedText(fullWord.substring(0, typedText.length + 1));
+        setTypingSpeed(200);
+      }
+
+      if (!isDeleting && typedText === fullWord) {
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && typedText === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+        setTimeout(() => {}, 500);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [typedText, isDeleting, loopNum, typingSpeed]);
 
   return (
     <header className="space-y-12">
@@ -23,13 +49,20 @@ const Header: React.FC = () => {
       >
         <div className="space-y-3">
           <motion.div
-            className="w-28 h-28 rounded-full ring-2 ring-neutral-200 dark:ring-neutral-700 bg-neutral-900 dark:bg-neutral-100 text-neutral-100 dark:text-neutral-900 flex items-center justify-center text-3xl font-extrabold tracking-tight"
+            className="w-28 h-28 rounded-full bg-transparent border-2 border-purple-500/60 dark:border-purple-400/60 ring-4 ring-purple-500/10 text-purple-900 dark:text-purple-200 flex items-center justify-center font-mono text-3xl font-extrabold tracking-wider overflow-hidden"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, ease: 'easeOut' }}
-            aria-label="Profile placeholder"
+            aria-label="Profile terminal avatar"
           >
-            {initials || 'YN'}
+            <div className="flex items-center">
+              <span className="drop-shadow-sm">{typedText}</span>
+              <motion.span 
+                className="inline-block w-2.5 h-6 bg-purple-600 dark:bg-purple-400 ml-0.5 rounded-sm"
+                animate={{ opacity: [1, 0, 1] }}
+                transition={{ repeat: Infinity, duration: 0.8, ease: "easeInOut" }}
+              />
+            </div>
           </motion.div>
           <div className="flex flex-col sm:items-start sm:gap-2">
             <div className="flex justify-between w-full items-center gap-3">
