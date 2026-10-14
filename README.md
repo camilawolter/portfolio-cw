@@ -1,14 +1,27 @@
-# Developer Portfolio Template
+# 💜 Camila Wolter — Portfolio
 
-Minimalist, multilingual portfolio template built with React + TypeScript + Vite.
+Portfólio pessoal desenvolvido para apresentar meus projetos em destaque, experiência profissional e habilidades técnicas em **Desenvolvimento Full Stack** e **Quality Assurance (QA)**.
 
-## Stack
+> 💡 **Créditos & Inspiração**: Este projeto foi criado com base em um *fork* / inspiração do repositório [`Andsu-dev/portfolio-base`](https://github.com/Andsu-dev/portfolio-base).
 
-- React 19
-- TypeScript
-- Vite
-- Framer Motion
-- Tailwind (CDN in `index.html`)
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Frontend**: React 18, TypeScript, Tailwind CSS v4, Framer Motion
+- **Internacionalização (i18n)**: Suporte dinâmico para Português (`pt-BR`), Inglês (`en`) e Espanhol (`es`)
+- **Estilização & Tema**: Suporte a Dark Mode / Light Mode nativo com Tailwind
+- **Build & Ferramentas**: Vite, ESLint
+
+---
+
+## 🚀 Projetos em Destaque
+
+- **Onde Assistir**: Agregador web de streaming para descoberta de títulos (React, TypeScript, Laravel, PostgreSQL, TMDb API).
+- **FinMail.ai**: Triagem inteligente e classificação de e-mails para o setor financeiro usando IA e NLP (Python, FastAPI, React, Hugging Face API).
+- **Factory Manager (Autoflex)**: Otimizador de produção industrial e controle de estoque com Algoritmo Ganancioso (Java 17, Quarkus, PostgreSQL, React, Redux Toolkit, Cypress).
+
+---
 
 ## Getting Started
 
@@ -40,85 +53,3 @@ npm run build
 ```bash
 npm run preview
 ```
-
-## How To Customize
-
-Main customization file:
-
-- `src/config/constants.ts`
-
-Edit this file to update all content in PT/EN/ES:
-
-- Hero data (`name`, `role`, `location`, `email`, etc.)
-- About paragraphs
-- Projects
-- Experience
-- Skills
-- Education
-- Footer
-
-UI structure:
-
-- `src/components/layout/Header.tsx`
-- `src/components/sections/Projects.tsx`
-- `src/components/sections/Experience.tsx`
-- `src/components/sections/TechnicalStack.tsx`
-- `src/components/sections/Education.tsx`
-- `src/components/layout/Footer.tsx`
-
-### Social links
-
-Update social URLs in:
-
-- `src/components/layout/Header.tsx`
-
-Current links are placeholders:
-
-- `https://linkedin.com/in/your-profile`
-- `https://github.com/your-username`
-- `https://x.com/your-handle`
-
-### Branding and SEO
-
-Edit:
-
-- `index.html` for `<title>`, description, author and theme color.
-- `public/favicon.svg` for your favicon.
-- `metadata.json` for app metadata.
-
-This template intentionally ships without personal image assets and without Open Graph image tags.
-
-## Project Structure
-
-```text
-src/
-  app/
-    App.tsx
-  components/
-    layout/
-    sections/
-    ui/
-  config/
-    constants.ts
-    theme.tsx
-  i18n/
-    index.tsx
-  types/
-    index.ts
-```
-
-## Deploy
-
-You can deploy the `dist/` output to any static host:
-
-- Vercel
-- Netlify
-- Cloudflare Pages
-- GitHub Pages
-
-## Quick Checklist Before Publish
-
-- Replace all placeholder content in `src/config/constants.ts`
-- Replace social URLs in `src/components/layout/Header.tsx`
-- Update metadata in `index.html` and `metadata.json`
-- Run `npm run build` and confirm no errors
