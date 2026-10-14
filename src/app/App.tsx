@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import Header from '@/components/layout/Header';
@@ -13,7 +12,7 @@ const App: React.FC = () => {
   const { t } = useI18n();
 
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-950 text-[#0B0B0B] dark:text-neutral-100 antialiased selection:bg-orange-100 dark:selection:bg-orange-900">
+    <div className="min-h-screen bg-white dark:bg-neutral-950 text-[#0B0B0B] dark:text-neutral-100 antialiased selection:bg-purple-100 dark:selection:bg-purple-950">
       <motion.div
         className="max-w-[800px] mx-auto px-6 py-16 md:py-24 space-y-24"
         initial={{ opacity: 0, y: 10 }}

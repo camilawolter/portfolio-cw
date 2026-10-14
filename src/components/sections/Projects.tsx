@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useI18n } from '@/i18n';
@@ -25,7 +24,7 @@ const Projects: React.FC = () => {
               href={project.url} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-full text-xs font-bold text-orange-600 dark:text-orange-200 hover:bg-orange-600 hover:text-white hover:border-orange-600 dark:hover:bg-orange-500 dark:hover:text-neutral-950 transition-all shadow-sm"
+              className="inline-flex items-center gap-1.5 px-3 py-1 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-full text-xs font-bold text-purple-600 dark:text-purple-300 hover:bg-purple-600 hover:text-white hover:border-purple-600 dark:hover:bg-purple-600 dark:hover:text-white transition-all shadow-sm"
               title={t.actions.visitProject}
               whileHover={{ scale: 1.02, y: -1 }}
               transition={{ type: 'spring', stiffness: 280, damping: 18 }}
@@ -43,7 +42,7 @@ const Projects: React.FC = () => {
             </motion.a>
           </div>
           
-          <p className="text-neutral-600 dark:text-neutral-300 mb-4 text-sm font-semibold italic border-l-2 border-orange-200 dark:border-orange-700 pl-3">
+          <p className="text-neutral-600 dark:text-neutral-300 mb-4 text-sm font-semibold italic border-l-2 border-purple-200 dark:border-purple-800 pl-3">
             {project.tagline}
           </p>
 
@@ -61,7 +60,7 @@ const Projects: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.35, ease: 'easeOut', delay: i * 0.03 }}
               >
-                <span className="text-orange-400 dark:text-orange-300 font-bold">•</span>
+                <span className="text-purple-500 dark:text-purple-400 font-bold">•</span>
                 {bullet}
               </motion.li>
             ))}

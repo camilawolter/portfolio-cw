@@ -33,7 +33,7 @@ const LanguageSwitcher: React.FC = () => {
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-xs font-semibold text-neutral-700 dark:text-neutral-200 shadow-sm hover:border-orange-300 dark:hover:border-orange-400 hover:text-orange-600 dark:hover:text-orange-200 transition-colors"
+        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-xs font-semibold text-neutral-700 dark:text-neutral-200 shadow-sm hover:border-purple-300 dark:hover:border-purple-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors"
         aria-haspopup="listbox"
         aria-expanded={open}
       >
@@ -67,7 +67,7 @@ const LanguageSwitcher: React.FC = () => {
                   aria-selected={option.code === locale}
                   className={`w-full flex items-center gap-3 px-3 py-2.5 text-sm font-semibold transition-colors ${
                     option.code === locale
-                      ? 'bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-200'
+                      ? 'bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300'
                       : 'text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800'
                   }`}
                 >
