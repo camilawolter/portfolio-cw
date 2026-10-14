@@ -10,38 +10,62 @@ export const SUPPORTED_LOCALES: { code: Locale; label: string }[] = [
 
 const skillsPt = [
   'TypeScript',
+  'PHP',
   'React',
+  'Laravel',
   'Node.js',
-  'Next.js',
-  'NestJS',
+  'Java',
+  'Quarkus',
+  'Spring Boot',
+  'Python',
+  'FastAPI',
   'PostgreSQL',
+  'MySQL',
+  'Tailwind CSS',
   'Docker',
-  'AWS',
-  'CI/CD'
+  'Linux',
+  'CI/CD',
+  'Cypress'
 ];
 
 const skillsEn = [
   'TypeScript',
+  'PHP',
   'React',
+  'Laravel',
   'Node.js',
-  'Next.js',
-  'NestJS',
+  'Java',
+  'Quarkus',
+  'Spring Boot',
+  'Python',
+  'FastAPI',
   'PostgreSQL',
+  'MySQL',
+  'Tailwind CSS',
   'Docker',
-  'AWS',
-  'CI/CD'
+  'Linux',
+  'CI/CD',
+  'Cypress'
 ];
 
 const skillsEs = [
   'TypeScript',
+  'PHP',
   'React',
+  'Laravel',
   'Node.js',
-  'Next.js',
-  'NestJS',
+  'Java',
+  'Quarkus',
+  'Spring Boot',
+  'Python',
+  'FastAPI',
   'PostgreSQL',
+  'MySQL',
+  'Tailwind CSS',
   'Docker',
-  'AWS',
-  'CI/CD'
+  'Linux',
+  'CI/CD',
+  'Cypress'
 ];
 
 export const TRANSLATIONS: Record<Locale, TranslationContent> = {
@@ -49,22 +73,22 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
     sections: {
       about: 'Sobre',
       projects: 'Projetos em Destaque',
-      experience: 'Experiencia Profissional',
-      stack: 'Stack Tecnica',
-      education: 'Formacao',
+      experience: 'Experiência Profissional',
+      stack: 'Stack Técnica',
+      education: 'Formação',
       languages: 'Idiomas'
     },
     hero: {
-      name: 'Seu Nome',
-      role: 'Seu Cargo Principal',
-      nationality: 'Sua Nacionalidade',
-      location: 'Sua Cidade, Pais',
-      phone: '+55 (00) 00000-0000',
-      email: 'voce@seudominio.com',
+      name: 'Camila Wolter',
+      role: 'Desenvolvedora Full Stack',
+      nationality: 'Brasileira',
+      location: 'São Lourenço do Sul, Brasil',
+      phone: '+55 (53) 991688519',
+      email: 'woltercardoso@gmail.com',
       about: [
-        'Escreva aqui um resumo curto sobre quem voce e e qual problema voce resolve.',
-        'No segundo paragrafo, explique sua especialidade tecnica e sua forma de trabalho.',
-        'No terceiro, destaque impacto de negocio, lideranca tecnica e resultados concretos.'
+        'Sou apaixonada por resolver problemas complexos e garantir a excelência e a qualidade final de produtos digitais. Minha trajetória une de forma única a base analítica da Engenharia Hídrica com a expertise técnica em Desenvolvimento Web e Quality Assurance.',
+        'Com experiência prática em QA e desenvolvimento, atuo na prevenção de falhas combinando testes manuais, automação (Cypress, PHPUnit, Playwright) e uma visão full-stack sólida (JavaScript/TypeScript, PHP/Laravel, React e Node.js).',
+        'Prezo pela estabilidade, pela empatia com o usuário e por entregas que realmente façam a diferença. Estou sempre em busca de aprender novas ferramentas e metodologias que elevem o padrão e tragam eficiência para o dia a dia.'
       ]
     },
     actions: {
@@ -73,79 +97,90 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
     },
     projects: [
       {
-        id: 'project-one',
-        title: 'Projeto 01',
-        url: 'https://seu-projeto.com',
-        tagline: 'Tagline curta com proposta de valor.',
-        description: 'Descreva o projeto, o contexto, as tecnologias e o resultado principal em uma frase clara.',
+        id: 'onde-assistir',
+        title: 'Onde Assistir',
+        url: 'https://youtube.com/watch?v=B2LSCS4lXX8',
+        tagline: 'Agregador web de streaming para descoberta de títulos.',
+        description: 'Plataforma web desenvolvida como Trabalho de Conclusão de Curso para centralizar e facilitar a busca por títulos de streaming de forma ágil.',
         bullets: [
-          'Stack principal e arquitetura adotada.',
-          'Desafio tecnico mais relevante e como foi resolvido.',
-          'Resultado mensuravel obtido com o projeto.'
+          'Stack principal: React, TypeScript, Laravel, PostgreSQL e consumo da API TMDb.',
+          'Arquitetura modular orientada a serviços e estruturação de banco de dados relacional.',
+          'Implementação de rotas otimizadas e interface responsiva para melhor experiência do usuário.'
         ]
       },
       {
-        id: 'project-two',
-        title: 'Projeto 02',
-        url: 'https://seu-projeto.com',
-        tagline: 'Produto digital com foco em escalabilidade.',
-        description: 'Use este espaco para mostrar dominio tecnico e pensamento de produto.',
+        id: 'finmail-ai',
+        title: 'FinMail.ai - Triagem Inteligente de E-mails',
+        url: 'https://desafio-email-front.vercel.app/',
+        tagline: 'Automação inteligente e classificação de e-mails para o setor financeiro.',
+        description: 'Solução full stack desenvolvida para automatizar a leitura, triagem e priorização de um alto volume diário de e-mails, diferenciando solicitações produtivas de mensagens irrelevantes.',
         bullets: [
-          'Automacao de fluxo critico do negocio.',
-          'Melhoria de performance e observabilidade.',
-          'Evolucao de experiencia de usuario orientada por dados.'
+          'IA e NLP integradas via Hugging Face Inference API (DeBERTa-v3) para análise de intenção e leitura de anexos PDF/TXT.',
+          'Backend assíncrono em Python com FastAPI e sistema de resiliência (fallback) por palavras-chave financeiras.',
+          'Frontend moderno em React.js, Tailwind CSS v4, Framer Motion e interface Glassmorphism em dark mode.'
         ]
       },
       {
-        id: 'project-three',
-        title: 'Projeto 03',
-        url: 'https://seu-projeto.com',
-        tagline: 'Ferramenta interna para acelerar operacoes.',
-        description: 'Mostre como voce entrega valor de forma pragmatica e sustentavel.',
+        id: 'factory-manager',
+        title: 'Factory Manager - Inventory & Production Optimizer',
+        url: 'https://github.com/camilawolter/Autoflex',
+        tagline: 'Sistema Full Stack para controle inteligente de produção industrial.',
+        description: 'Software de otimização de estoque que utiliza Algoritmo Ganancioso (Greedy Algorithm) para sugerir planos de produção maximizando o faturamento com base nos insumos disponíveis.',
         bullets: [
-          'Padronizacao de processos e reducao de retrabalho.',
-          'Integracao com APIs e servicos externos.',
-          'Documentacao e governanca tecnica.'
+          'Stack robusta: Java 17+, Quarkus, Hibernate Panache, PostgreSQL, React 18, Vite e Redux Toolkit.',
+          'Simulação em memória de estoque e efetivação de baixa em tempo real.',
+          'Cobertura de testes automatizados com JUnit 5 no backend, Vitest + MSW no frontend e Cypress (E2E).'
         ]
       }
     ],
     experiences: [
       {
-        company: 'Empresa Atual',
-        location: 'Remoto / Cidade, Pais',
-        role: 'Cargo Atual',
-        period: '01/2024 - Presente',
+        company: '2D Gráfica Expressa',
+        location: 'São Lourenço do Sul, RS, Brasil',
+        role: 'Assistente de Produção Gráfica',
+        period: '07/2026 - 10/2026',
         bullets: [
-          'Liderou entregas de alto impacto em produto e engenharia.',
-          'Melhorou confiabilidade com testes, observabilidade e padroes.',
-          'Apoiou decisoes de arquitetura com foco em escala e manutencao.'
+          'Atendimento de clientes, levantamento de demandas e acompanhamento de ordens de serviço do início ao fim.',
+          'Uso do CorelDRAW para ajustes de layout, cores e preparação de arquivos para garantir a fidelidade visual.',
+          'Auxílio na confecção de adesivos, cartões de visita, folders, revistas, manuais e execução de impressões e encadernações.'
         ]
       },
       {
-        company: 'Empresa Anterior',
-        location: 'Cidade, Pais',
-        role: 'Cargo Anterior',
-        period: '01/2022 - 12/2023',
+        company: 'Chuva Inc.',
+        location: 'Campinas, SP, Brasil (Remoto)',
+        role: 'Desenvolvedora Web (Estágio)',
+        period: '07/2024 - 09/2025',
         bullets: [
-          'Construiu funcionalidades estrategicas em colaboracao com produto.',
-          'Reduziu custos operacionais com automacoes tecnicas.',
-          'Mentorou pessoas do time em boas praticas de desenvolvimento.'
+          'Implementação de interfaces dinâmicas, dashboards e formulários complexos utilizando PHP (Drupal) e Angular.',
+          'Refatoração de queries SQL e atualizações de banco de dados para consultas mais rápidas e melhor desempenho.',
+          'Garantia de estabilidade com testes unitários (PHPUnit), integração e regressão visual (Cypress) em ambiente Docker/Linux.'
+        ]
+      },
+      {
+        company: 'Farmácia Municipal',
+        location: 'São Lourenço do Sul, RS, Brasil',
+        role: 'Estagiária',
+        period: '09/2023 - 07/2024',
+        bullets: [
+          'Atendimento direto ao público e orientação aos cidadãos com foco em clareza e empatia.',
+          'Dispensação de medicamentos seguindo rigorosos protocolos de saúde pública.',
+          'Organização de estoque, controle de validade e gestão eficiente de suprimentos farmacêuticos.'
         ]
       }
     ],
     skills: skillsPt,
     education: {
-      institution: 'Universidade ou Instituicao',
-      degree: 'Curso / Formacao',
-      date: 'MM/AAAA',
+      institution: 'Instituto Federal Sul-Rio-Grandense (IFSul) & Universidade Federal de Pelotas (UFPel)',
+      degree: 'Tecnologia em Sistemas para Internet & Bacharelado em Engenharia Hídrica',
+      date: '2026 / 2022',
       languages: [
-        { name: 'Portugues', level: 'Nativo' },
-        { name: 'Ingles', level: 'Avancado' }
+        { name: 'Português', level: 'Nativo' },
+        { name: 'Inglês', level: 'Avançado' }
       ]
     },
     footer: {
-      copyright: '© 2026 Seu Nome',
-      role: 'Seu Cargo'
+      copyright: '© 2026 Camila Wolter',
+      role: 'Desenvolvedora Full Stack'
     }
   },
   en: {
@@ -158,16 +193,16 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
       languages: 'Languages'
     },
     hero: {
-      name: 'Your Name',
-      role: 'Your Primary Role',
-      nationality: 'Your Nationality',
-      location: 'Your City, Country',
-      phone: '+00 000 000 0000',
-      email: 'you@yourdomain.com',
+      name: 'Camila Wolter',
+      role: 'Full Stack Developer',
+      nationality: 'Brazilian',
+      location: 'São Lourenço do Sul, Brazil',
+      phone: '+55 (53) 991688519',
+      email: 'woltercardoso@gmail.com',
       about: [
-        'Write a short summary about who you are and what problem you solve.',
-        'In the second paragraph, explain your technical specialty and working style.',
-        'In the third paragraph, highlight business impact, leadership, and outcomes.'
+        'I am passionate about solving complex problems and ensuring the final excellence and quality of digital products. My journey uniquely bridges the analytical foundation of Water Resources Engineering (UFPel) with technical expertise in Web Development and Quality Assurance.',
+        'With hands-on experience in QA and development, I stand on the front line of failure prevention by combining manual testing, automation (Cypress, PHPUnit, Playwright), and a solid full-stack vision (JavaScript/TypeScript, PHP/Laravel, React, and Node.js).',
+        'I value stability, user empathy, and deliveries that truly make an impact. I am always eager to learn new tools and methodologies that elevate quality standards and bring efficiency to everyday work.'
       ]
     },
     actions: {
@@ -176,79 +211,90 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
     },
     projects: [
       {
-        id: 'project-one',
-        title: 'Project 01',
-        url: 'https://your-project.com',
-        tagline: 'A short value proposition tagline.',
-        description: 'Describe the project, context, technology choices, and core outcome in one clear sentence.',
+        id: 'onde-assistir',
+        title: 'Onde Assistir',
+        url: 'https://github.com',
+        tagline: 'Web streaming aggregator platform for content discovery.',
+        description: 'Web platform developed as an undergraduate capstone project to centralize and simplify searching for streaming titles efficiently.',
         bullets: [
-          'Main stack and architecture decisions.',
-          'Most relevant technical challenge and solution.',
-          'Measured outcome delivered by the project.'
+          'Main stack: React, TypeScript, Laravel, PostgreSQL, and TMDb API integration.',
+          'Modular service-oriented architecture and robust relational database design.',
+          'Implementation of optimized routes and responsive interface for a seamless user experience.'
         ]
       },
       {
-        id: 'project-two',
-        title: 'Project 02',
-        url: 'https://your-project.com',
-        tagline: 'Digital product focused on scalability.',
-        description: 'Use this space to demonstrate technical depth and product thinking.',
+        id: 'finmail-ai',
+        title: 'FinMail.ai - Smart Email Triage',
+        url: 'https://desafio-email-front.vercel.app/',
+        tagline: 'Intelligent automation and email classification for the financial sector.',
+        description: 'Full stack solution built to automate the reading, triage, and prioritization of a high daily volume of emails, differentiating productive requests from irrelevant messages.',
         bullets: [
-          'Automation for a critical business workflow.',
-          'Performance and observability improvements.',
-          'Data-informed user experience enhancements.'
+          'Integrated AI and NLP via Hugging Face Inference API (DeBERTa-v3) for intent analysis and PDF/TXT attachment processing.',
+          'Asynchronous Python backend with FastAPI and a keyword-based resilience fallback system.',
+          'Modern frontend built with React.js, Tailwind CSS v4, Framer Motion, and dark mode Glassmorphism UI.'
         ]
       },
       {
-        id: 'project-three',
-        title: 'Project 03',
-        url: 'https://your-project.com',
-        tagline: 'Internal tool to accelerate operations.',
-        description: 'Show how you deliver practical and sustainable value.',
+        id: 'factory-manager',
+        title: 'Factory Manager - Inventory & Production Optimizer',
+        url: 'https://github.com/camilawolter/Autoflex',
+        tagline: 'Full Stack system for intelligent industrial production control.',
+        description: 'Inventory optimization software that utilizes a Greedy Algorithm to suggest production plans maximizing revenue based on available supplies.',
         bullets: [
-          'Process standardization and reduced rework.',
-          'Integrations with external APIs and services.',
-          'Technical governance and documentation quality.'
+          'Robust stack: Java 17+, Quarkus, Hibernate Panache, PostgreSQL, React 18, Vite, and Redux Toolkit.',
+          'In-memory inventory simulation and real-time stock deduction handling.',
+          'Automated test coverage using JUnit 5 on the backend, Vitest + MSW on the frontend, and Cypress (E2E).'
         ]
       }
     ],
     experiences: [
       {
-        company: 'Current Company',
-        location: 'Remote / City, Country',
-        role: 'Current Role',
-        period: '01/2024 - Present',
+        company: '2D Gráfica Expressa',
+        location: 'São Lourenço do Sul, RS, Brazil',
+        role: 'Graphic Production Assistant',
+        period: '07/2026 - 10/2026',
         bullets: [
-          'Led high-impact deliveries across product and engineering.',
-          'Improved reliability through testing, observability, and standards.',
-          'Supported architectural decisions focused on scale and maintainability.'
+          'Customer service, requirement gathering, and end-to-end service order tracking.',
+          'Utilized CorelDRAW for layout adjustments, color calibration, and pre-press file preparation.',
+          'Assisted in manufacturing stickers, business cards, folders, magazines, manuals, and managed printing/binding.'
         ]
       },
       {
-        company: 'Previous Company',
-        location: 'City, Country',
-        role: 'Previous Role',
-        period: '01/2022 - 12/2023',
+        company: 'Chuva Inc.',
+        location: 'Campinas, SP, Brazil (Remote)',
+        role: 'Web Developer (Internship)',
+        period: '07/2024 - 09/2025',
         bullets: [
-          'Built strategic features in close collaboration with product teams.',
-          'Reduced operational cost through technical automation.',
-          'Mentored teammates on engineering best practices.'
+          'Implemented dynamic interfaces, dashboards, and complex forms using PHP (Drupal) and Angular.',
+          'Refactored SQL queries and database updates, leading to faster queries and improved application performance.',
+          'Ensured software stability through unit tests (PHPUnit), integration tests, and visual regression testing (Cypress) in Docker/Linux.'
+        ]
+      },
+      {
+        company: 'Municipal Pharmacy',
+        location: 'São Lourenço do Sul, RS, Brazil',
+        role: 'Intern',
+        period: '09/2023 - 07/2024',
+        bullets: [
+          'Direct public customer service and citizen guidance with focus on clarity and empathy.',
+          'Medication dispensing following strict public health protocols.',
+          'Inventory organization, expiration date tracking, and efficient pharmaceutical supply management.'
         ]
       }
     ],
     skills: skillsEn,
     education: {
-      institution: 'University or Institution',
-      degree: 'Degree / Program',
-      date: 'MM/YYYY',
+      institution: 'Federal Institute of Sul-Rio-Grandense (IFSul) & Federal University of Pelotas (UFPel)',
+      degree: 'Internet Systems Technology & Bachelor in Water Resources Engineering',
+      date: '2026 / 2022',
       languages: [
-        { name: 'English', level: 'Fluent' },
-        { name: 'Spanish', level: 'Intermediate' }
+        { name: 'Portuguese', level: 'Native' },
+        { name: 'English', level: 'Advanced' }
       ]
     },
     footer: {
-      copyright: '© 2026 Your Name',
-      role: 'Your Role'
+      copyright: '© 2026 Camila Wolter',
+      role: 'Full Stack Developer'
     }
   },
   es: {
@@ -256,21 +302,21 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
       about: 'Sobre',
       projects: 'Proyectos Destacados',
       experience: 'Experiencia Profesional',
-      stack: 'Stack Tecnico',
-      education: 'Formacion',
+      stack: 'Stack Técnico',
+      education: 'Formación',
       languages: 'Idiomas'
     },
     hero: {
-      name: 'Tu Nombre',
-      role: 'Tu Rol Principal',
-      nationality: 'Tu Nacionalidad',
-      location: 'Tu Ciudad, Pais',
-      phone: '+00 000 000 0000',
-      email: 'tu@tudominio.com',
+      name: 'Camila Wolter',
+      role: 'Desarrolladora Full Stack',
+      nationality: 'Brasileña',
+      location: 'São Lourenço do Sul, Brasil',
+      phone: '+55 (53) 991688519',
+      email: 'woltercardoso@gmail.com',
       about: [
-        'Escribe un resumen corto sobre quien eres y que problema resuelves.',
-        'En el segundo parrafo, explica tu especialidad tecnica y forma de trabajo.',
-        'En el tercero, destaca impacto de negocio, liderazgo tecnico y resultados.'
+        'Me apasiona resolver problemas complejos y garantizar la excelencia y calidad final de los productos digitales. Mi trayectoria une de forma única la base analítica de la Ingeniería Hídrica (UFPel) con la experiencia técnica en Desarrollo Web y Quality Assurance.',
+        'Con experiencia práctica en QA y desarrollo, trabajo en la primera línea de prevención de errores combinando pruebas manuales, automatización (Cypress, PHPUnit, Playwright) y una sólida visión full-stack (JavaScript/TypeScript, PHP/Laravel, React y Node.js).',
+        'Valoro la estabilidad, la empatía con el usuario y las entregas que realmente generan impacto. Siempre busco aprender nuevas herramientas y metodologías que eleven el estándar y aporten eficiencia al día a día.'
       ]
     },
     actions: {
@@ -279,79 +325,90 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
     },
     projects: [
       {
-        id: 'project-one',
-        title: 'Proyecto 01',
-        url: 'https://tu-proyecto.com',
-        tagline: 'Una propuesta de valor clara y corta.',
-        description: 'Describe el proyecto, el contexto, la tecnologia y el resultado clave en una frase.',
+        id: 'onde-assistir',
+        title: 'Onde Assistir',
+        url: 'https://github.com',
+        tagline: 'Agregador web de streaming para el descubrimiento de títulos.',
+        description: 'Plataforma web desarrollada como proyecto de titulación para centralizar y facilitar la búsqueda de títulos de streaming de forma ágil.',
         bullets: [
-          'Stack principal y decisiones de arquitectura.',
-          'Desafio tecnico mas importante y solucion.',
-          'Resultado medible entregado por el proyecto.'
+          'Stack principal: React, TypeScript, Laravel, PostgreSQL y consumo de la API TMDb.',
+          'Arquitectura modular orientada a servicios y diseño robusto de bases de datos relacionales.',
+          'Implementación de rutas optimizadas y diseño responsivo para una óptima experiencia de usuario.'
         ]
       },
       {
-        id: 'project-two',
-        title: 'Proyecto 02',
-        url: 'https://tu-proyecto.com',
-        tagline: 'Producto digital con foco en escalabilidad.',
-        description: 'Usa este espacio para mostrar profundidad tecnica y vision de producto.',
+        id: 'finmail-ai',
+        title: 'FinMail.ai - Triaje Inteligente de Cordeos',
+        url: 'https://desafio-email-front.vercel.app/',
+        tagline: 'Automatización inteligente y clasificación de correos para el sector financiero.',
+        description: 'Solución full stack desarrollada para automatizar la lectura, clasificación y priorización de un alto volumen diario de correos electrónicos.',
         bullets: [
-          'Automatizacion de flujo critico del negocio.',
-          'Mejoras de performance y observabilidad.',
-          'Evolucion de experiencia de usuario guiada por datos.'
+          'IA y NLP integradas mediante Hugging Face Inference API (DeBERTa-v3) para análisis de intención y lectura de archivos PDF/TXT.',
+          'Backend asíncrono en Python con FastAPI y sistema de resiliencia (fallback) por palabras clave financieras.',
+          'Frontend moderno en React.js, Tailwind CSS v4, Framer Motion e interfaz Glassmorphism en modo oscuro.'
         ]
       },
       {
-        id: 'project-three',
-        title: 'Proyecto 03',
-        url: 'https://tu-proyecto.com',
-        tagline: 'Herramienta interna para acelerar operaciones.',
-        description: 'Muestra como entregas valor de forma practica y sostenible.',
+        id: 'factory-manager',
+        title: 'Factory Manager - Inventory & Production Optimizer',
+        url: 'https://github.com/camilawolter/Autoflex',
+        tagline: 'Sistema Full Stack para control inteligente de producción industrial.',
+        description: 'Software de optimización de inventario que utiliza un Algoritmo Voraz (Greedy Algorithm) para sugerir planes de producción maximizando la facturación.',
         bullets: [
-          'Estandarizacion de procesos y reduccion de retrabajo.',
-          'Integraciones con APIs y servicios externos.',
-          'Gobernanza tecnica y documentacion de calidad.'
+          'Stack robusta: Java 17+, Quarkus, Hibernate Panache, PostgreSQL, React 18, Vite y Redux Toolkit.',
+          'Simulación en memoria de inventario y gestión de rebajas de stock en tiempo real.',
+          'Cobertura de pruebas automatizadas con JUnit 5 en backend, Vitest + MSW en frontend y Cypress (E2E).'
         ]
       }
     ],
     experiences: [
       {
-        company: 'Empresa Actual',
-        location: 'Remoto / Ciudad, Pais',
-        role: 'Rol Actual',
-        period: '01/2024 - Presente',
+        company: '2D Gráfica Expressa',
+        location: 'São Lourenço do Sul, RS, Brasil',
+        role: 'Asistente de Producción Gráfica',
+        period: '07/2026 - 10/2026',
         bullets: [
-          'Lidero entregas de alto impacto entre producto e ingenieria.',
-          'Mejoro confiabilidad con pruebas, observabilidad y estandares.',
-          'Apoyo decisiones de arquitectura con foco en escala y mantenimiento.'
+          'Atención a clientes, levantamiento de demandas y seguimiento de órdenes de servicio de principio a fin.',
+          'Uso de CorelDRAW para ajustes de diseño, colores y preparación de archivos para garantizar fidelidad visual.',
+          'Apoyo en la confección de adhesivos, tarjetas de presentación, carpetas, revistas, manuales e impresión/encuadernación.'
         ]
       },
       {
-        company: 'Empresa Anterior',
-        location: 'Ciudad, Pais',
-        role: 'Rol Anterior',
-        period: '01/2022 - 12/2023',
+        company: 'Chuva Inc.',
+        location: 'Campinas, SP, Brasil (Remoto)',
+        role: 'Desarrolladora Web (Pasantía)',
+        period: '07/2024 - 09/2025',
         bullets: [
-          'Construyo funcionalidades estrategicas junto a producto.',
-          'Reduzco costos operativos mediante automatizaciones.',
-          'Mentoreo al equipo en buenas practicas de desarrollo.'
+          'Implementación de interfaces dinámicas, dashboards y formularios complejos utilizando PHP (Drupal) y Angular.',
+          'Refactorización de consultas SQL y actualizaciones de base de datos para mejorar el rendimiento de la aplicación.',
+          'Garantía de estabilidad con pruebas unitarias (PHPUnit), de integración y regresión visual (Cypress) en entorno Docker/Linux.'
+        ]
+      },
+      {
+        company: 'Farmacia Municipal',
+        location: 'São Lourenço do Sul, RS, Brasil',
+        role: 'Pasante',
+        period: '09/2023 - 07/2024',
+        bullets: [
+          'Atención directa al público y orientación a los ciudadanos con enfoque en claridad y empatía.',
+          'Dispensación de medicamentos siguiendo estrictos protocolos de salud pública.',
+          'Organización de inventario, control de fechas de caducidad y gestión eficiente de suministros farmacéuticos.'
         ]
       }
     ],
     skills: skillsEs,
     education: {
-      institution: 'Universidad o Institucion',
-      degree: 'Carrera / Programa',
-      date: 'MM/AAAA',
+      institution: 'Instituto Federal Sul-Rio-Grandense (IFSul) & Universidade Federal de Pelotas (UFPel)',
+      degree: 'Tecnología en Sistemas para Internet & Licenciatura en Ingeniería Hídrica',
+      date: '2026 / 2022',
       languages: [
-        { name: 'Espanol', level: 'Nativo' },
-        { name: 'Ingles', level: 'Avanzado' }
+        { name: 'Portugués', level: 'Nativo' },
+        { name: 'Inglés', level: 'Avanzado' }
       ]
     },
     footer: {
-      copyright: '© 2026 Tu Nombre',
-      role: 'Tu Rol'
+      copyright: '© 2026 Camila Wolter',
+      role: 'Desarrolladora Full Stack'
     }
   }
 };
