@@ -87,10 +87,10 @@ const Header: React.FC = () => {
               {t.hero.location}
             </span>
             <span className="text-neutral-300 dark:text-neutral-700">/</span>
-            <a href={`tel:${t.hero.phone.replace(/[^\d+]/g, '')}`} className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors">
+            {/* <a href={`tel:${t.hero.phone.replace(/[^\d+]/g, '')}`} className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors">
               {t.hero.phone}
-            </a>
-            <span className="text-neutral-300 dark:text-neutral-700">/</span>
+            </a> */}
+            {/* <span className="text-neutral-300 dark:text-neutral-700">/</span> */}
             <a href={`mailto:${t.hero.email}`} className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors">
               {t.hero.email}
             </a>

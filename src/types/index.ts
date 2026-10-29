@@ -43,7 +43,7 @@ export interface TranslationContent {
     role: string;
     nationality: string;
     location: string;
-    phone: string;
+    // phone: string;
     email: string;
     about: string[];
   };
