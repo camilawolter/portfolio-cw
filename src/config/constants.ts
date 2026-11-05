@@ -126,9 +126,11 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
         role: 'Desenvolvedora Web (Estágio)',
         period: '07/2024 - 09/2025',
         bullets: [
-          'Garantia de estabilidade com testes unitários (PHPUnit), integração e regressão visual (Cypress) em ambiente Docker/Linux.',
-          'Implementação de interfaces dinâmicas, dashboards e formulários complexos utilizando PHP (Drupal) e Angular.',
-          'Refatoração de queries SQL e atualizações de banco de dados para consultas mais rápidas e melhor desempenho.'
+          'Desenvolvimento de interfaces dinâmicas, dashboards e formulários complexos em PHP (Drupal) e Angular, focando em usabilidade e experiência do usuário.',
+          'Refatoração de queries SQL e otimização de banco de dados, melhorando significativamente o tempo de resposta e o desempenho da aplicação.',
+          'Garantia de estabilidade do software com testes unitários (PHPUnit), de integração e regressão visual automatizada (Cypress) em ambiente Linux com Docker.',
+          'Revisão técnica de Pull Requests do time, assegurando os padrões de qualidade, boas práticas e colaboração no código.',
+          'Investigação e resolução de bugs críticos reportados pelo Sucesso do Cliente, acompanhados da elaboração de documentações técnicas.'
         ]
       },
       {
@@ -240,9 +242,11 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
         role: 'Web Developer (Internship)',
         period: '07/2024 - 09/2025',
         bullets: [
-          'Ensured software stability through unit tests (PHPUnit), integration tests, and visual regression testing (Cypress) in Docker/Linux.',
-          'Implemented dynamic interfaces, dashboards, and complex forms using PHP (Drupal) and Angular.',
-          'Refactored SQL queries and database updates, leading to faster queries and improved application performance.'
+          'Developed dynamic interfaces, dashboards, and complex forms using PHP (Drupal) and Angular, focusing on usability and user experience.',
+          'Refactored SQL queries and optimized database performance, significantly reducing response times and improving overall application performance.',
+          'Ensured software stability through unit testing (PHPUnit), integration testing, and automated visual regression (Cypress) in a Linux/Docker environment.',
+          'Conducted technical Pull Request reviews for team members, enforcing code quality standards, best practices, and collaboration.',
+          'Investigated and fixed critical bugs reported by Customer Success, alongside writing clear technical documentation.'
         ]
       },
       {
@@ -354,9 +358,11 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
         role: 'Desarrolladora Web (Pasantía)',
         period: '07/2024 - 09/2025',
         bullets: [
-          'Garantía de estabilidad con pruebas unitarias (PHPUnit), de integración y regresión visual (Cypress) en entorno Docker/Linux.',
-          'Implementación de interfaces dinámicas, dashboards y formularios complejos utilizando PHP (Drupal) y Angular.',
-          'Refactorización de consultas SQL y actualizaciones de base de datos para mejorar el rendimiento de la aplicación.'
+          'Desarrollo de interfaces dinámicas, dashboards y formularios complejos en PHP (Drupal) y Angular, enfocados en la usabilidad y experiencia del usuario.',
+          'Refactorización de consultas SQL y optimización de bases de datos, mejorando significativamente el tiempo de respuesta y el rendimiento de la aplicación.',
+          'Garantía de estabilidad del software mediante pruebas unitarias (PHPUnit), de integración y regresión visual automatizada (Cypress) en entorno Linux con Docker.',
+          'Revisión técnica de Pull Requests del equipo, asegurando estándares de calidad de código, buenas prácticas y colaboración.',
+          'Investigación y resolución de errores críticos reportados por Atención al Cliente, junto con la elaboración de documentación técnica.'
         ]
       },
       {
