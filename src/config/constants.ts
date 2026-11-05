@@ -8,7 +8,7 @@ export const SUPPORTED_LOCALES: { code: Locale; label: string }[] = [
   { code: 'es', label: 'ES' }
 ];
 
-// Qualidade e testes primeiro, depois desenvolvimento, depois dados e infraestrutura.
+
 const skillsBase = [
   'Cypress',
   'JUnit 5',
@@ -60,9 +60,9 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
       location: 'Pelotas, Brasil',
       email: 'woltercardoso@gmail.com',
       about: [
-        'Sou QA Júnior com base em desenvolvimento Full Stack. Testo sabendo como o código é feito: combino testes manuais, automação (Cypress, PHPUnit, JUnit, Vitest; Playwright em evolução) e avaliação de usabilidade e acessibilidade.',
-        'Na Chuva Inc., criei testes unitários, de integração e de regressão visual. No meu TCC, o Onde Assistir, conduzi a avaliação de qualidade: revisão de requisitos, avaliação heurística, auditoria com Lighthouse e teste de usabilidade com 9 usuários.',
-        'Venho da Engenharia Hídrica, que me deu uma base analítica para investigar problemas. Busco minha oportunidade como QA Júnior, em vagas remotas, híbridas ou presenciais.'
+        'Sou Desenvolvedora Full Stack e Analista de QA. Construo aplicações robustas de ponta a ponta e garanto a qualidade técnica por meio de código limpo, testes automatizados (Cypress, PHPUnit, JUnit, Vitest; Playwright) e avaliações de usabilidade.',
+        'Na Chuva Inc., atuei no desenvolvimento web (PHP/Drupal e Angular), refatoração de queries e na criação de testes unitários, de integração e de regressão visual. No meu TCC, o Onde Assistir, liderei tanto o desenvolvimento Full Stack quanto a auditoria completa de qualidade (Lighthouse, heurísticas de Nielsen e testes com usuários).',
+        'Minha formação em Engenharia Hídrica trouxe uma base altamente analítica para resolução de problemas. Busco oportunidades como Desenvolvedora Full Stack ou QA, em vagas remotas, híbridas ou presenciais.'
       ]
     },
     actions: {
@@ -77,10 +77,10 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
         tagline: 'Como validei a qualidade de um agregador de streaming com testes estáticos e dinâmicos.',
         description: 'Plataforma web desenvolvida como Trabalho de Conclusão de Curso para centralizar a busca por títulos de streaming (React, TypeScript, Laravel, PostgreSQL e API TMDb). Conduzi a avaliação de qualidade descrita abaixo.',
         bullets: [
-          'Testes estáticos: revisão técnica de requisitos e matriz de rastreabilidade (requisito → caso de uso → tela). A revisão mostrou que o comparador de preços (RF13) era inviável com APIs em tempo real, e o requisito foi redefinido como redirecionamento para as lojas.',
-          'Avaliação heurística (Nielsen): 10 heurísticas avaliadas; a não conformidade de severidade 3 (falta de ajuda/FAQ) foi corrigida antes dos testes com usuários.',
-          'Lighthouse em 8 rotas: desempenho de 86 a 100 e acessibilidade de 87 a 95. Contraste insuficiente, hierarquia de títulos quebrada e botões sem rótulo foram corrigidos seguindo a WCAG 2.1 AA.',
-          'Teste de usabilidade com 9 usuários (Hotjar, roteiro de tarefas e questionário SUS, com média de 96,8). O pré-teste com colegas corrigiu o roteiro e um bug no formulário de coleta.'
+          'Desenvolvimento Full Stack completo: criação de APIs, consumo de dados externos e interfaces responsivas.',
+          'Testes estáticos e revisões: matriz de rastreabilidade, refinamento de requisitos e correção prévia de fluxos.',
+          'Avaliação de usabilidade e acessibilidade: aplicação de heurísticas de Nielsen, auditorias Lighthouse (86-100) e testes com 9 usuários (SUS médio de 96,8).',
+          'Garantia de conformidade com padrões WCAG 2.1 AA para contraste e navegação acessível.'
         ]
       },
       {
@@ -174,9 +174,9 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
       location: 'Pelotas, Brazil',
       email: 'woltercardoso@gmail.com',
       about: [
-        'I am a Junior QA with a Full Stack development background. I test knowing how the code is built: I combine manual testing, automation (Cypress, PHPUnit, JUnit, Vitest; Playwright in progress) and usability and accessibility evaluation.',
-        'At Chuva Inc., I built unit, integration and visual regression tests. In my capstone project, Onde Assistir, I led the quality evaluation: requirements review, heuristic evaluation, Lighthouse audits and a usability test with 9 users.',
-        'I come from Water Resources Engineering, which gave me an analytical foundation for investigating problems. I am looking for my opportunity as a Junior QA, in remote, hybrid or on-site roles.'
+        'I am a Full Stack Developer and QA Analyst. I build robust end-to-end applications and ensure technical excellence through clean code, automated testing (Cypress, PHPUnit, JUnit, Vitest; Playwright), and usability evaluations.',
+        'At Chuva Inc., I worked on web development (PHP/Drupal and Angular), query refactoring, and unit, integration, and visual regression tests. In my capstone project, Onde Assistir, I led both the Full Stack development and the comprehensive quality audit (Lighthouse, Nielsen heuristics, and user testing).',
+        'My background in Water Resources Engineering provided a strong analytical foundation for problem-solving. I am looking for opportunities as a Full Stack Developer or QA, in remote, hybrid, or on-site roles.'
       ]
     },
     actions: {
@@ -191,10 +191,10 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
         tagline: 'How I validated the quality of a streaming aggregator with static and dynamic testing.',
         description: 'Web platform built as an undergraduate capstone project to centralize the search for streaming titles (React, TypeScript, Laravel, PostgreSQL and the TMDb API). I led the quality evaluation described below.',
         bullets: [
-          'Static testing: technical requirements review and traceability matrix (requirement → use case → screen). The review showed that the price comparison feature (RF13) was unfeasible with real-time APIs, and the requirement was redefined as a redirect to the stores.',
-          'Heuristic evaluation (Nielsen): 10 heuristics assessed; the severity 3 non-conformity (no help/FAQ) was fixed before user testing.',
-          'Lighthouse on 8 routes: performance from 86 to 100 and accessibility from 87 to 95. Insufficient contrast, a broken heading hierarchy and unlabeled buttons were fixed following WCAG 2.1 AA.',
-          'Usability test with 9 users (Hotjar, task script and SUS questionnaire, averaging 96.8). A pilot test with classmates fixed the script and a bug in the data collection form.'
+          'Complete Full Stack development: API creation, external data consumption, and responsive interfaces.',
+          'Static testing and reviews: traceability matrix, requirements refinement, and proactive flow correction.',
+          'Usability and accessibility evaluation: Nielsen heuristics, Lighthouse audits (86-100), and testing with 9 users (average SUS of 96.8).',
+          'Ensured compliance with WCAG 2.1 AA standards for contrast and accessible navigation.'
         ]
       },
       {
@@ -288,9 +288,9 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
       location: 'Pelotas, Brasil',
       email: 'woltercardoso@gmail.com',
       about: [
-        'Soy QA Junior con base en desarrollo Full Stack. Pruebo sabiendo cómo se construye el código: combino pruebas manuales, automatización (Cypress, PHPUnit, JUnit, Vitest; Playwright en evolución) y evaluación de usabilidad y accesibilidad.',
-        'En Chuva Inc., creé pruebas unitarias, de integración y de regresión visual. En mi trabajo de titulación, Onde Assistir, dirigí la evaluación de calidad: revisión de requisitos, evaluación heurística, auditorías con Lighthouse y una prueba de usabilidad con 9 usuarios.',
-        'Vengo de la Ingeniería Hídrica, que me dio una base analítica para investigar problemas. Busco mi oportunidad como QA Junior, en puestos remotos, híbridos o presenciales.'
+        'Soy Desarrolladora Full Stack y Analista de QA. Construyo aplicaciones robustas de principio a fin y garantizo la calidad técnica a través de código limpio, pruebas automatizadas (Cypress, PHPUnit, JUnit, Vitest; Playwright) y evaluaciones de usabilidad.',
+        'En Chuva Inc., trabajé en desarrollo web (PHP/Drupal y Angular), refactorización de consultas y creación de pruebas unitarias, de integración y de regresión visual. En mi trabajo de titulación, Onde Assistir, lideré tanto el desarrollo Full Stack como la auditoría completa de calidad (Lighthouse, heurísticas de Nielsen y pruebas con usuarios).',
+        'Mi formación en Ingeniería Hídrica aportó una base altamente analítica para la resolución de problemas. Busco oportunidades como Desarrolladora Full Stack o QA, en puestos remotos, híbridos o presenciales.'
       ]
     },
     actions: {
@@ -305,10 +305,10 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
         tagline: 'Cómo validé la calidad de un agregador de streaming con pruebas estáticas y dinámicas.',
         description: 'Plataforma web desarrollada como proyecto de titulación para centralizar la búsqueda de títulos de streaming (React, TypeScript, Laravel, PostgreSQL y la API TMDb). Dirigí la evaluación de calidad descrita a continuación.',
         bullets: [
-          'Pruebas estáticas: revisión técnica de requisitos y matriz de trazabilidad (requisito → caso de uso → pantalla). La revisión mostró que el comparador de precios (RF13) era inviable con APIs en tiempo real, y el requisito se redefinió como redirección a las tiendas.',
-          'Evaluación heurística (Nielsen): 10 heurísticas evaluadas; la no conformidad de severidad 3 (falta de ayuda/FAQ) se corrigió antes de las pruebas con usuarios.',
-          'Lighthouse en 8 rutas: rendimiento de 86 a 100 y accesibilidad de 87 a 95. El contraste insuficiente, la jerarquía de títulos rota y los botones sin etiqueta se corrigieron siguiendo la WCAG 2.1 AA.',
-          'Prueba de usabilidad con 9 usuarios (Hotjar, guion de tareas y cuestionario SUS, con promedio de 96,8). La prueba piloto con compañeros corrigió el guion y un error en el formulario de recolección.'
+          'Desarrollo Full Stack completo: creación de APIs, consumo de datos externos e interfaces responsivas.',
+          'Pruebas estáticas y revisiones: matriz de trazabilidad, refinamiento de requisitos y corrección previa de flujos.',
+          'Evaluación de usabilidad y accesibilidad: aplicación de heurísticas de Nielsen, auditorías Lighthouse (86-100) y pruebas con 9 usuarios (SUS promedio de 96,8).',
+          'Garantía de cumplimiento con los estándares WCAG 2.1 AA de contraste y navegación accesible.'
         ]
       },
       {
