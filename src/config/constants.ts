@@ -57,7 +57,7 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
       name: 'Camila Wolter',
       role: 'QA Júnior | Desenvolvedora Full Stack',
       nationality: 'Brasileira',
-      location: 'Pelotas, Brasil',
+      location: 'Brasil',
       email: 'woltercardoso@gmail.com',
       about: [
         'Sou Desenvolvedora Full Stack e Analista de QA. Construo aplicações robustas de ponta a ponta e garanto a qualidade técnica por meio de código limpo, testes automatizados (Cypress, PHPUnit, JUnit, Vitest; Playwright) e avaliações de usabilidade.',
@@ -171,7 +171,7 @@ export const TRANSLATIONS: Record<Locale, TranslationContent> = {
       name: 'Camila Wolter',
       role: 'Junior QA | Full Stack Developer',
       nationality: 'Brazilian',
-      location: 'Pelotas, Brazil',
+      location: 'Brazil',
       email: 'woltercardoso@gmail.com',
       about: [
         'I am a Full Stack Developer and QA Analyst. I build robust end-to-end applications and ensure technical excellence through clean code, automated testing (Cypress, PHPUnit, JUnit, Vitest; Playwright), and usability evaluations.',
